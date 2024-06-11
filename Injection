@@ -1,0 +1,28 @@
+Description:
+An attacker sends untrusted data to an interpreter as part of a command or query.
+
+Impact:
+• Unauthorized data access.
+• Compromised data integrity and availability.
+• Complete host takeover.
+• Disclosure of sensitive information.
+• Data loss or corruption
+
+Prevention:
+• Using safe APIs that avoid using the interpreter entirely.
+• Employing parameterized queries or ORM (Object Relational Mapping) tools.
+• Implementing positive server-side input validation.
+• Escaping all special characters using the specific escape syntax for the interpreter.
+• Applying least privilege principles to minimize the potential impact
+
+List of vulns:
+• SQL Injection (CWE-89): Exploits flaws in SQL databases by injecting malicious SQL statements.
+• NoSQL Injection: Similar to SQL Injection but targets NoSQL databases.
+• OS Command Injection (CWE-78): Executes arbitrary commands on the host operating system.
+• LDAP Injection: Manipulates LDAP statements used for directory services.
+• Expression Language Injection: Abuses weaknesses in template engines or expression interpreters.
+• XML External Entities (XXE) Injection (CWE-611): Exploits XML processors to interfere with application processing.
+• Cross-Site Scripting (XSS) (CWE-79): Injects malicious scripts into content served to end-users.
+• ORM Injection: Targets vulnerabilities in Object Relational Mapping (ORM) tools.
+• XPath Injection: Manipulates XPath queries used in XML databases.
+• Header Injection: Injects malicious header content, often leading to response splitting attacks.
