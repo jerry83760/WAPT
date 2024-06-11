@@ -1,0 +1,15 @@
+Description:
+Broken Access Control is a security issue where a system fails to properly restrict the activities that authenticated users are allowed to perform. 
+This vulnerability can lead to unauthorized access to sensitive data or functions beyond the user’s permissions.
+
+Impact:
+a. Data Breach: Unauthorized access to sensitive data, leading to data theft or leakage.
+b. Functionality Misuse: Users performing actions outside of their intended permissions, potentially causing operational disruptions.
+c. Elevation of Privilege: Attackers gaining higher-level privileges, which could lead to full system compromise.
+
+Prevention:
+a. Least Privilege Principle: Users should only have the minimum level of access required to perform their tasks.
+b. Access Control Lists (ACLs): Implementing ACLs to define who can access what resources in the system.
+c. Role-Based Access Control (RBAC): Assigning permissions based on roles within the organization.
+d. Regular Audits: Conducting regular security audits to ensure access controls are working as intended.
+e. Automated Testing: Using automated tools to test for access control issues during development and deployment.
