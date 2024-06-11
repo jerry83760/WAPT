@@ -1,0 +1,22 @@
+Description:
+Risks related to design and architectural flaws of software development. 
+
+Impact:
+• Functionality failures.
+• Data breaches.
+• Violation of business policies.
+• Tarnished reputations.
+• Exploitation by threat actors who can bypass authentication, modify URL parameters, access sensitive information, or assume legitimate user accounts
+
+Prevention:
+• Moving from DevOps to DevSecOps.
+• Implementing detailed threat modeling for critical authentication, access control, business logic, and key flows.
+• Integrating secure design patterns and reference architectures early in the software development lifecycle.
+• Using threat modeling and secure design principles to evaluate threats continuously and ensure robust code design and testing
+
+List of vulns:
+• Missing or Ineffective Control Design: This is a broad issue where necessary security controls are not designed to defend against specific attacks.
+• Generation of Error Message Containing Sensitive Information (CWE-209): Error messages that reveal sensitive information can be exploited by attackers.
+• Unprotected Storage of Credentials (CWE-256): Storing credentials without proper security can lead to their disclosure or misuse.
+• Trust Boundary Violation (CWE-501): Occurs when the software does not validate or incorrectly validates that a request sent between two security domains is authorized.
+• nsufficiently Protected Credentials (CWE-522): When user credentials are not adequately secured, they can be compromised.
