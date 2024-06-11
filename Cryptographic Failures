@@ -1,0 +1,26 @@
+Description:
+The incorrect use or implementation of cryptographic protocols and algorithms. This can include using weak or outdated encryption algorithms, improper key management, lack of sufficient randomness.
+These failures can lead to the exposure of sensitive data, such as passwords, credit card numbers, health records, personal information, and business secrets.
+
+Impact:
+• Compromised Data: Sensitive information may be exposed or stolen.
+• Loss of Trust: Users’ trust in the application or service can be severely damaged.
+• Regulatory Penalties: Non-compliance with data protection laws can result in hefty fines.
+• Security Breaches: Weaknesses in cryptography can be exploited by attackers to gain unauthorized access to systems
+
+Prevention:
+• Strong Encryption: Use strong and current encryption algorithms to protect data in transit and at rest.
+• Key Management: Implement robust key management practices, including key rotation and secure key storage.
+• Randomness: Ensure that cryptographic randomness requirements are met to strengthen the encryption.
+• Authentication: Properly authenticate parties in a cryptographic exchange to prevent man-in-the-middle attacks.
+• Regular Updates: Stay updated with the latest cryptographic standards and best practices to avoid dependence on obsolete methods
+
+List of vulns:
+Use of Hard-coded Password (CWE-259): This involves the use of hard-coded passwords, which can be easily discovered and exploited.
+Broken or Risky Crypto Algorithm (CWE-327): This refers to the use of weak or broken cryptographic algorithms that can be easily cracked.
+Insufficient Entropy (CWE-331): This occurs when the randomness used for cryptographic purposes does not meet the required cryptographic standards.
+Weak Encryption: Using an encryption algorithm no longer considered secure, such as DES or RSA with a small key size, can make it relatively easy for an attacker to decrypt the information.
+Improper Key Management: Failing to protect or rotate encryption keys adequately can compromise sensitive information.
+Inadequate Randomness: Some cryptographic algorithms, such as generating session keys, require a source of valid random numbers. Using a Pseudo Random Number Generator instead can weaken the encryption.
+Inadequate Authentication: Failing to authenticate parties properly in a cryptographic exchange can lead to man-in-the-middle attacks, where an attacker intercepts and alters communications.
+Dependence on Obsolete Standards: Such as SSL V2 and SSL V3, which had critical vulnerabilities exploited in the wild.
