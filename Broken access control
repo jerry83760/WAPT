@@ -13,3 +13,13 @@ b. Access Control Lists (ACLs): Implementing ACLs to define who can access what 
 c. Role-Based Access Control (RBAC): Assigning permissions based on roles within the organization.
 d. Regular Audits: Conducting regular security audits to ensure access controls are working as intended.
 e. Automated Testing: Using automated tools to test for access control issues during development and deployment.
+
+List of vulns:
+• Insecure Direct Object References (IDOR): This occurs when an application provides direct access to objects based on user-supplied input. As a result, attackers can bypass authorization and access data and functions directly.
+• Insufficient Authentication: When applications do not enforce strong authentication mechanisms, attackers can gain unauthorized access by exploiting weak or stolen credentials.
+• CORS Misconfiguration: Incorrectly configured Cross-Origin Resource Sharing (CORS) can allow attackers to access APIs from unauthorized domains.
+• Force Browsing: Attackers can access restricted pages by modifying the URL to access files or directories that they should not have access to.
+• Elevation of Privilege: This allows users to gain higher privileges than they are entitled to, potentially leading to full system compromise.
+• Metadata Manipulation: Tampering with tokens, cookies, or other metadata can lead to privilege escalation or unauthorized actions.
+• Missing Function Level Access Control: Sometimes, applications do not properly protect functions that require a higher privilege level, allowing lower-privileged users to execute these functions.
+• Bypassing Access Control Checks: Attackers may change the request to bypass the access control checks and gain unauthorized access to functionalities.
