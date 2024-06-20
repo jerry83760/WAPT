@@ -1,0 +1,21 @@
+Description:
+Improper configuration of security settings, permissions, and controls that can lead to vulnerabilities and unauthorized access.
+
+Impact:
+• Security misconfigurations can lead to unauthorized access, data leaks, and system compromise.
+• Attackers may exploit these weaknesses to gain access to sensitive information or manipulate the application.
+
+Prevention:
+• Implement secure installation processes:
+• Automate repeatable hardening processes (closing potiential attack vector and routinely updating systems to avoid being exploit)for consistent deployment.
+• Configure development, QA, and production environments identically with different credentials.
+• Maintain a minimal platform without unnecessary features or frameworks.
+• Regularly review and update configurations based on security notes, updates, and patches.
+• Automate verification of configurations in all environments.
+ 
+List of vulns:
+• Default accounts and passwords remaining enabled and unchanged.
+• Error handling revealing overly informative error messages or stack traces to users.
+• Outdated software or vulnerable components.
+• Missing security headers or directives from the server.
+• Improperly set security settings in application servers, frameworks, libraries, and databases.
