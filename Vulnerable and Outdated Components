@@ -1,0 +1,25 @@
+Vulnerable and Outdated Components
+
+Description:
+Vulnerable and outdated components refer to software libraries, frameworks, or other third-party components that have known security vulnerabilities or are no longer actively maintained. These components can be found in various parts of a software system, including the operating system, web/application servers, databases, and client-side libraries
+
+Impact:
+• Security Breaches: Attackers can exploit known vulnerabilities to gain unauthorized access, steal data, or take control of the system.
+• System Instability: Outdated components may not be compatible with newer software, leading to crashes or other operational issues.
+• Compliance Issues: Using unsupported software can lead to non-compliance with industry regulations and standards.
+
+Prevention:
+• Patch Management: Regularly update and patch all components. Implement a process to ensure timely updates1.
+• Inventory Management: Maintain an inventory of all software components, including their versions and dependencies1.
+• Vulnerability Scanning: Use tools like OWASP Dependency-Check or Snyk to scan for known vulnerabilities in your components14.
+• Secure Sources: Only download components from official and secure sources. Prefer signed packages to reduce the risk of tampered components1.
+• Monitoring and Alerts: Subscribe to security bulletins and alerts for the components you use to stay informed about new vulnerabilities
+ 
+List of vulns:
+• Unpatched Libraries: Libraries like jQuery, AngularJS, or ReactJS that have known vulnerabilities but haven’t been updated1.
+• Outdated Frameworks: Web application frameworks such as Ruby on Rails, Django, or Spring that are not updated to the latest secure versions1.
+• Operating System Vulnerabilities: Unpatched vulnerabilities in operating systems, such as the Windows SMB vulnerability (EternalBlue)1.
+• Web Server Vulnerabilities: Outdated versions of web servers like Apache or IIS that have known security issues1.
+• Database Management Systems: Vulnerabilities in outdated versions of database management systems (DBMS) like MySQL or PostgreSQL2.
+• Third-Party Components: Use of unmaintained third-party components that may have security flaws2.
+• Nested Dependencies: Vulnerabilities in nested dependencies that are not directly visible but are part of the software stack
