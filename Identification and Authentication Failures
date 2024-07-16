@@ -1,0 +1,26 @@
+Identification and Authentication Failures
+
+Description:
+These vulnerabilities occur when a system or application fails to correctly identify or authenticate a user.
+Attackers exploit these weaknesses to gain unauthorized access to systems and data.
+
+Impact:
+• Unauthorized Access: Attackers can bypass authentication mechanisms, gaining entry to sensitive resources.
+• Data Exposure: Sensitive data may be exposed due to weak authentication controls.
+• Session Hijacking: Attackers can take over active user sessions.
+• Brute Force Attacks: Repeated login attempts can compromise accounts.
+• Credential Stuffing: Attackers reuse stolen credentials across multiple services
+
+Prevention:
+• Implement multi-factor authentication (MFA) to prevent automated attacks.
+• Avoid shipping or deploying with default credentials (especially for admin users).
+• Enforce strong password policies based on modern guidelines (e.g., NIST 800-63b).
+• Harden registration, credential recovery, and API pathways against account enumeration attacks.
+• Limit failed login attempts without causing denial of service.
+• Use secure, server-side session management with random session IDs and proper invalidation.
+ 
+List of vulns:
+• Flawed Brute-Force Protection
+• Weak Passwords or Policies
+• Missing Multi-Factor Authentication (MFA)
+• Session Hijacking
