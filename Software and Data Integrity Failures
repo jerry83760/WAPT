@@ -1,0 +1,24 @@
+Software and Data Integrity Failures
+
+Description:
+These vulnerabilities relate to code and infrastructure lacking protection against integrity violations.
+For instance, applications relying on plugins, libraries, or modules from untrusted sources or repositories are at risk.
+Insecure CI/CD pipelines can introduce unauthorized access or malicious code.
+Auto-updates without sufficient integrity verification can allow attackers to distribute and run their own updates.
+
+Impact:
+• Unauthorized Modification: Attackers can alter data or code, compromising system integrity.
+• Data Exposure: Sensitive information may be accessed or tampered with.
+• System Compromise: Malicious code introduced via insecure pipelines can compromise the entire system
+
+Prevention:
+• Digital Signatures: Verify software/data from expected sources using digital signatures.
+• Trusted Repositories: Use trusted repositories for libraries and dependencies.
+• Code Review: Minimize malicious code by reviewing changes.
+• CI/CD Security: Ensure proper segregation, configuration, and access control in pipelines.
+• Integrity Checks: Don’t send unsigned or unencrypted serialized data to untrusted clients
+ 
+List of vulns:
+• CI/CD Pipeline
+• Insecure Disposal
+• Compromised Pre-installed Software
