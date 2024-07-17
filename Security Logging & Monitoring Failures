@@ -1,0 +1,24 @@
+Security Logging & Monitoring Failures
+
+Description:
+Security logging and monitoring failures occur when an application’s ability to log security-related events and effectively monitor those logs falls short. These shortcomings can lead to delayed detection of security incidents, making it easier for attackers to remain undetected.
+
+Impact:
+• Breaches may remain undetected, allowing attackers to exploit vulnerabilities.
+• Delayed response increases the risk of data compromise and system damage.
+
+Prevention:
+• Log login failures, access control issues, and input validation failures.
+• Use log formats compatible with log management solutions.
+• Encode log data correctly to prevent attacks.
+• Establish an audit trail for critical transactions.
+• Set up effective monitoring and alerting mechanisms.
+• Have an incident response plan in place.
+ 
+List of vulns:
+• Insufficient logging: Failing to log relevant security events.
+• Unclear log messages: Logs lacking context or meaningful information.
+• Lack of monitoring: Inadequate surveillance of logs for suspicious activity.
+• Ineffective response processes: Delays in detecting and responding to incidents.
+• Improper output neutralization for logs: Vulnerabilities related to log data.
+• Omission of security-relevant information: Missing critical details in logs.
