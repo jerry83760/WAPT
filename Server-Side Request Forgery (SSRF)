@@ -1,0 +1,25 @@
+Server-Side Request Forgery (SSRF)
+
+Description:
+SSRF is an attack vector where an application is manipulated to interact with internal/external networks or the local machine.
+It occurs due to mishandling of URLs, allowing attackers to forge requests.
+Examples include fetching images from external servers, custom webhooks, or internal requests to other services.
+
+Impact:
+• Attackers can exploit SSRF to access sensitive resources (e.g., databases, APIs, internal systems).
+• Data leakage, unauthorized access, and service disruption are common consequences.
+
+Prevention:
+1: Case 1 (Allowlist Approach):
+• Identify trusted applications that the vulnerable app can communicate with.
+• Implement allowlists to restrict requests to these trusted endpoints.
+2: Case 2 (No Allowlist):
+• Validate user input rigorously to prevent malicious URLs.
+• Use URL parsers to extract hostnames and IPs.
+• Consider network segmentation to limit SSRF impact
+ 
+List of vulns:
+• Cloud Server Meta-data: Cloud services like AWS provide a REST interface at http://169.254.169.254/, where important configuration and sometimes authentication keys can be extracted.
+• Database HTTP Interfaces: NoSQL databases (e.g., MongoDB) may have REST interfaces on HTTP ports. If the database is expected to be internal-only, authentication might be disabled, allowing attackers to extract data.
+• Internal REST Interfaces: Attackers can target internal services that aren’t directly exposed on the internet.
+• Files: Using file:// URIs, attackers may read files from the server
