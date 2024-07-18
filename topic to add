@@ -1,0 +1,28 @@
+Access control security models
+vertical vs horizontal access controls
+IDOR
+sql injection
+command injection
+lfi/rfi
+file upload vuln
+race condition
+ssrf
+xxe
+nosql
+api
+xss
+csrf
+cors
+clickjacking
+dom injection
+websocket
+insecure deserializaiton
+web llm
+graphql
+ssti
+web cache poisoning
+http host header
+http request smuggling
+oauth authentication
+jwt attacks
+prototype pollution
